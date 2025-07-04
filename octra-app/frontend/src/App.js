@@ -3,13 +3,13 @@ import { useState } from 'react';
 function App() {
   const [form, setForm] = useState({ to: '', amount: '1', message: '' });
   const [response, setResponse] = useState('');
-
+  const backendUrl = `${window.location.hostname}:4000`;
   const sendTx = async (e) => {
     e.preventDefault();
     setResponse('⏳ Sending transaction...');
 
     try {
-      const res = await fetch("http://154.12.116.164:4000/send-tx", {
+      const res = await fetch("http://${backendUrl}/send-tx", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
