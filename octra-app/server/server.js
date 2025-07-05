@@ -20,9 +20,9 @@ const wallet = (() => {
     };
   }
   return {
-    priv: process.env.PRIVATE_KEY,
-    addr: process.env.OCTRA_ADDRESS,
-    rpc: process.env.RPC || 'https://octra.network',
+    priv: process.env.priv,
+    addr: process.env.addr,
+    rpc: process.env.rpc || 'https://octra.network',
   };
 })();
 if (!wallet.priv || !wallet.addr) {
