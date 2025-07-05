@@ -22,7 +22,7 @@ sudo apt-get -qq update && sudo apt-get upgrade -y
 sudo apt -qq install curl -y
 ```
 ```bash
-curl -s https://raw.githubusercontent.com/codedialect/octra-wallet/main/octra_wallet.sh | sudo
+bash <(curl -sL https://raw.githubusercontent.com/codedialect/octra-wallet/main/octra_wallet.sh)
 ```
 
 - Choose:
@@ -107,7 +107,7 @@ This is a deployable, ready-to-use full-stack wallet that:
 
 # Deploy:
 ```bash
-curl -s https://raw.githubusercontent.com/codedialect/octra-wallet/main/octra_app.sh | sudo
+bash <(curl -sL https://raw.githubusercontent.com/codedialect/octra-wallet/main/octra_app.sh)
 ```
 ---
 
