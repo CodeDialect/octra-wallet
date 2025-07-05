@@ -93,7 +93,7 @@ elif [[ "$mode" == "2" ]]; then
   cd server
   python3 -m venv venv
   source venv/bin/activate
-  pip install -r requirements.txt || pip install aiohttp pynacl python-dotenv
+  pip install aiohttp pynacl python-dotenv
   cd ..
 
   echo "📦 Installing backend deps"
