@@ -49,14 +49,7 @@ Download & install Node.js v22 from:
 ### Step 2: Clone Wallet Generator
 
 ```powershell
-git clone https://github.com/octra-labs/wallet-gen.git
-cd wallet-gen
-```
-
-### Step 3: Start the UI
-
-```powershell
-start.bat
+powershell -c "irm octra.org/wallet-generator.ps1 | iex"
 ```
 
 ### Access Wallet UI  
@@ -79,6 +72,51 @@ Claim testnet tokens using your wallet address:
 — [https://faucet.octra.network/](https://faucet.octra.network/)
 
 ---
+
+## A 1-click full-stack wallet interface for sending transactions on the **Octra blockchain**, powered by:
+
+- ⚛️ React (Frontend UI)
+- 🚀 Express (Backend server)
+- 🐍 Python (Octra TX logic)
+- 📡 screen (persistent VPS sessions)
+
+Send secure, fast Octra transactions via a browser or terminal.
+
+## 🔥 Features
+
+✅ Web UI to send Octra TXs  
+✅ CLI with menu for advanced users  
+✅ Deploys on any VPS in 1 click  
+✅ Fully open source  
+✅ Uses `.env` or `wallet.json` for keys  
+✅ Separate screen sessions for frontend & backend
+
+---
+
+## 🧠 What is This?
+
+This is a deployable, ready-to-use full-stack wallet that:
+- Accepts a base64 Octra private key and wallet address
+- Uses a React UI to input recipient, amount, and message
+- Sends transactions via backend → Python script → Octra blockchain
+- Also supports CLI-only mode for terminal-only users
+
+---
+
+## 🚀 How to Deploy (1-Click Script)
+
+# Deploy:
+```bash
+curl -s https://raw.githubusercontent.com/codedialect/octra-wallet/main/octra_app.sh | sudo
+```
+---
+
+# Choose mode:
+
+1 = Terminal CLI
+
+2 = Full Web UI with screen sessions
+
 
 ## Stay Updated
 
