@@ -23,7 +23,7 @@ function clone_wallet_repo() {
 function install_for_vps() {
   echo -e "${YELLOW}🔧 Updating and installing packages for VPS...${NC}"
   sudo apt update && sudo apt upgrade -y
-  sudo apt install -y curl git ufw screen
+  sudo apt install -y curl git ufw screen zip
 
   if ! command -v node &> /dev/null; then
     echo -e "${YELLOW}📦 Installing Node.js v22...${NC}"
